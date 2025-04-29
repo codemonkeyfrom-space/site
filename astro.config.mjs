@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://pabrams.github.io/blogofthewog',
+	site: 'https://pabrams.github.io/code-monkey-from-space',
 	base: '/',
 	integrations: [mdx(), sitemap()],
 });
