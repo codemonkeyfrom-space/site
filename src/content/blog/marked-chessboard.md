@@ -2,31 +2,24 @@
 title: 'Chessboard showing square control'
 description: 'A small web app that gives a visual indication of which squares are controlled by which player.'
 pubDate: '2025-04-19'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '/marked-chessboard-practical-position.jpg'
 ---
 
 I coded and published a small web app that gives a visual indication, for any chess position, of which squares on a chessboard are controlled by which player.
 
-It is [published to my github pages](https://pabrams.github.io/marked-chessboard/), so you can try that out if you want. You can set a position in [Forsythe-Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
+It is [published to my github pages](https://pabrams.github.io/marked-chessboard/), so you can try that out if you want. You can set a position in [Forsythe-Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation), or you can do it by playing through a game (click once on a piece, and then on its destination square). If anyone asks me, I'd gladly add the ability to set a position by dragging and dropping. The whole thing is open source, so you can see how it's done (the source code is linked from each app at the bottom of the page.)
 
+If you don't want to click the [link](https://pabrams.github.io/marked-chessboard/), here's what the app looks like:
 
-## Paragraph
+![screenshot of Paul's marked-chessboard app](/marked-chessboard-position.jpg)
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+I had done this maybe twenty or thirty of years ago in C, and I thought it was time to modernize it. Turns out I'm not the first to think of this, though.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+## TO-DO
 
-## Images
-
-### Syntax
-
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
-
-### Output
-
-![blog placeholder](/blog-placeholder-about.jpg)
+- List other peoples' apps and other related links
+- Maybe describe how it's built. Or do a separate blog for that?
+- Remove the markdown guide below
 
 ## Blockquotes
 
