@@ -8,4 +8,5 @@ export default defineConfig({
 	site: 'https://pabrams.github.io/code-monkey-from-space',
 	base: '/',
 	integrations: [mdx(), sitemap()],
+	  
 });
