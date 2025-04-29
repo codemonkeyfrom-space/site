@@ -1,27 +1,14 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 19 2024'
+title: 'Chessboard showing square control'
+description: 'A small web app that gives a visual indication of which squares are controlled by which player.'
+pubDate: '2025-04-19'
 heroImage: '/blog-placeholder-1.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+I coded and published a small web app that gives a visual indication, for any chess position, of which squares on a chessboard are controlled by which player.
 
-## Headings
+It is [published to my github pages](https://pabrams.github.io/marked-chessboard/), so you can try that out if you want. You can set a position in [Forsythe-Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
-
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
 
 ## Paragraph
 
