@@ -1,4 +1,4 @@
-# Code-monkey-from-space
+# AstroChimp's Blog
 
-A blog by a character called code-monkey from space. 
+A blog by a character called AstroChimp
 
