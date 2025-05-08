@@ -1,8 +1,8 @@
 ---
 title: 'Conway''s Game of Life'
 description: 'My implementation of Conway''s famous cellular automaton'
-pubDate: '2025-05-06'
-heroImage: '/conway-1.jpg'
+pubDate: '2025-05-04'
+heroImage: '/conway-2.jpg'
 ---
 
 Many years ago, when I was taking an AI course at Carleton University, I created a java applet letting the user play [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
