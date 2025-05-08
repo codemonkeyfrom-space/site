@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://codemonkeyfromspace.com',
+	site: 'https://codemonkeyfrom.space',
 	base: '/',
 	integrations: [mdx(), sitemap()],
 	  
