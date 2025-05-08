@@ -44,10 +44,20 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
+	width: 55%;
+	max-width: calc(80% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 2em 1em;
+}
+.rightMenu {
+	border-left: 1px solid grey;
+	padding: 0 0 0 12px;
+	margin: 10px;
+	position: absolute;
+	top: 20%;
+	right: 3%;
+	font-size: 0.8em;
+	width: 15%;
 }
 h1,
 h2,
