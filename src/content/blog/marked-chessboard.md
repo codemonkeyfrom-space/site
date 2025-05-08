@@ -1,7 +1,7 @@
 ---
 title: 'Chessboard showing square control'
 description: 'A small web app that gives a visual indication of which squares are controlled by which player.'
-pubDate: '2025-04-19'
+pubDate: '2025-05-04'
 heroImage: '/marked-chessboard-practical-position.jpg'
 ---
 
