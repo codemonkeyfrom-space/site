@@ -3,6 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import FormattedDate from '../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
@@ -10,13 +15,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+	
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P48QWMV8WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P48QWMV8WM');
+</script>
+
 	<body>
 		<Header />
 		<main>
 			<h1>
-				This is CodeMonkeyFrom.Space</h1>
+				This is CodeMonkeyFrom.Space
+			</h1>
 			<p>
-				You can learn a lot from a monkey from space. That's why we've started this website and blog. To help people learn.
+				You can learn a lot from a monkey from space. 
+				That's why we've started this website and blog. 
+				To help people learn.
 			</p>
 			<p>
 				There are a few things to do around here.
@@ -24,8 +43,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<a href='/blog/conways-game-of-life/'>cellular automata</a>, and other fun stuff. 
 				If you're curious about any of that kind of thing, the best place to start is at our <a href="/blog">blog</a>.
 			</p>
-
 		</main >
+		<div class="rightMenu">
+			<h5>Recent blog posts</h5>
+			
+			<section>
+				
+				<ul>
+					{
+						posts.map((post) => (
+							<li>
+								<a href={`/blog/${post.id}/`}>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} /> - {post.data.title}
+									</p>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</div>
 		<Footer />
 	</body>
 </html>
