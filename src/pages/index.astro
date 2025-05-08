@@ -50,20 +50,15 @@ const posts = (await getCollection('blog')).sort(
 			<h5>Recent blog posts</h5>
 			
 			<section>
-				
-				<ul>
 					{
 						posts.map((post) => (
-							<li>
 								<a href={`/blog/${post.id}/`}>
 									<p class="date">
-										<FormattedDate date={post.data.pubDate} /> - {post.data.title}
+										{post.data.title}
 									</p>
 								</a>
-							</li>
 						))
 					}
-				</ul>
 			</section>
 		</div>
 		<Footer />
