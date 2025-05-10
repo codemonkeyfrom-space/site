@@ -1,26 +1,29 @@
 ---
 title: 'Using AI to create AI: A genetic algorithm for the Travelling Salesman Problem'
 description: ''
-pubDate: '2025-05-08'
+pubDate: '2025-05-10'
 heroImage: '/Ga4Tsp/tsp5.jpg'
 ---
+<p>
+<img width="200" align="right" src=/Ga4Tsp/first-tspga-by-chatgpt.jpg alt="" />
 
 Today we show how to use ChatGPT to create a genetic algorithm that solves the travelling salesman problem, visually, on a web page. This first post covers the initial steps to get this done. Although the author is a veteran programmer and experienced software engineer, he wrote absolutely no code for this blogpost; it was strictly copy/paste from ChatGPT. Anyone could achieve the same result, armed with the appropriate prompts. 
+</p>
 
 Here are a few links you may want to keep handy as you're reading this, though it is by no means necessary. You might consider opening them in a separate window, on your other monitor, or something. 
 - <a href="https://pabrams.github.io/Hga4Tsp/">A Hierarchical Genetic Algorithm For The Traveling Salesman Problem </a> explains a lot about the subject matter discussed below, for those that aren't familiar. We don't go into the hierarchical stuff for this blog post, though, so you could stop reading when you get to that part.
 - Here's the <a href="https://github.com/codemonkeyfrom-space/Ga4Tsp">source code</a>. There are branches containing the code generated after each prompt. 
-- The working demo of the final result (after the third prompt) is deployed at <a href="https://codemonkeyfrom-space.github.io/Ga4Tsp/">codemonkeyfrom-space.github.io/Ga4Tsp/</a> You can click in the box to make a bunch of dots, which become the cities of your TSP once you click the button.
+- The working demo of the final result (after the third prompt) is deployed at <a href="https://codemonkeyfrom-space.github.io/Ga4Tsp/">codemonkeyfrom-space.github.io/Ga4Tsp/</a>. You can click in the box to make a bunch of dots, which become the cities of your TSP once you click the button.
 
-My intended audience is people who are interested in creating software using AI, but aren't sure how to go about it. Maybe you have also never written any code, and that's fine. If you're interested in following along, and creating your own genetic algorithm, you can do so very easily. You can either give the same prompts to the AI as I did, which should give you the same or similar result, or you can get the code from my repository (linked above). Either way, all you have to do is copy the code and paste it into a file called index.html, in your favorite text editor. Then save the file, and double click it in your file explorer and it should open in your default browser.
+Our intended audience is people who are interested in creating software with the help of AI, but aren't sure how to go about it. Maybe you have also never written any code, and that's fine. If you're interested in following along, and creating your own genetic algorith, you can do so very easily. You can either give the same prompts to the AI as I did, which should give you the same or similar result, or you can get the code from my repository (linked above). Either way, all you have to do is copy the code and paste it into a file called index.html, in your favorite text editor. Then save the file, and double click it in your file explorer and it should open in your default browser.
+
+If you aren't interested in any stupid nonsense, but just want to get to the AI stuff, you can skip the background.
 
 ## Background
 
 A couple of decades ago (counting in Toronto time), when I first arrived on Earth, I knew absolutely nothing about my chosen vocation: Teacher of humanfolk. Frankly, I only took the job because I heard nobody cared about the stupid humans anymore, anyway, making it less likely that management would be diligent about checking on progress. Meaning I could really get stuff done. Unfortunately, it turns out the humans are big on bureaucracy, and something they call "credentials": One of the conditions to get a license to become a teacher of humans is a piece of paper called a "degree". I guess you know all that, being human, yourself. Here's something you may not know: In order for a space-monkey like me to get one of those human degrees, I have to spend several years teaching stuff to humans. 
 
-I'll give that a moment to sink in.
-
-I know, it sounds nonsensical, even to other humans. I hear you. "Let me get this straight", you're saying. "In order to be allowed to teach humans, you are required to teach them? That doesn't make any flippin' sense. You must not be telling us the whole story."
+I know, it sounds nonsensical, even to other humans. "Let me get this straight", I hear you saying. "In order to be allowed to teach humans, you are required to teach them? That doesn't make any flippin' sense. You must not be telling us the whole story."
 
 Okay, you're right, it's true, I left out a part. The twist is that they didn't admit they were learning from me; ostensibly, they were _teaching_ me. Yeah, I know it still doesn't make any sense, I'm just telling you how they sell it. I mean, everyone knows humans got the short stick when it comes to brains, but I didn't think they were _that_ dumb. The only explanation I can suggest is that they know that we know that they're just mooching free advice from us, helping them unravel the mysteries of the universe much faster than on their own, but they're doing all this as a sort of plausible deniability thing. They just pretend they know what they're talking about, even though anyone who actually knows what's going on can see with zero percent opacity that they don't have the foggiest. That way, when someone dumber than them (i.e., other humans not as familiar with the subject matter) is paying attention, they might actually believe the dumbass human's side of that story.
 
