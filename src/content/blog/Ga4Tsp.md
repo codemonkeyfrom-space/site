@@ -37,9 +37,7 @@ Shrug. That's the best I can do. You try explaining it. You can't, even though y
  
  ## Today's Task: Use AI to create AI
 
- I decided the first lesson would be about getting one of the primitive "chatbots" humans are so crazy about right now to build for us an interactive web page allowing users to input arbitrary TSP (Travelling Salesman Problem) instances. When ready, the user can click a button to have the genetic algorithm solve the problem in real time for them.
-
-If you don't know what a genetic algorithm is, or never heard of the Travelling Salesman Problem, just read my paper, linked above, and you will understand.
+ I decided the first lesson would be about getting one of the primitive "chatbots" humans are so crazy about right now to build for us an interactive web page allowing users to input arbitrary TSP instances. When ready, the user can click a button to have the genetic algorithm solve the problem in real time for them.
 
 ### The first prompt: "bot, make me a thing"
 
@@ -67,7 +65,7 @@ The AI gives me pretty much exactly what I asked for, again, which this time was
 
 ### Prompt 3
 
-As before, the bot's answer to the current prompt suggests the next. I get cheeky, and say hey, while you're at it, why not code the GA (genetic algorithnm)up for me as well? The bot impressed me by correctly guessing that TSP would be the subject of my GA, but now that I think of it I guess it's not that impressive. Of course it knows that TSP is by far the most common subject of such demos. (If you're completely lost with all these TSPs and GAs, again, read those sections of <a href="https://pabrams.github.io/Hga4Tsp/">my paper</a>, sections 2.1 and 2.2; there's a table of contents you can click on).
+As before, the bot's answer to the current prompt suggests the next. I get cheeky, and say hey, while you're at it, why not code the GA (genetic algorithnm) up for me as well? The bot impressed me by correctly guessing that TSP would be the subject of my GA, but now that I think of it I guess it's not that impressive. Of course it knows that TSP is by far the most common subject of such demos. (If you're completely lost with all these TSPs and GAs, again, read those sections of <a href="https://pabrams.github.io/Hga4Tsp/">my paper</a>, sections 2.1 and 2.2; there's a table of contents you can click on).
 
 <img src='/Ga4Tsp/prompt3.jpg' alt="Bot: Would you like me to add an on-screen display of the points or distances as well?; User: Well, the points, when the user draws them.... for sure. As for what else.... well, if you know how to do the GA, be my guest... then you can draw the edges for me too as it solves; Bot: Got it! Since you're drawing points for a genetic algorithm, likely for something like a Traveling Salesman Problem (TSP), I’ll prepare a full setup next: user draws points, then a simple GA kicks off and draws the current best path live. Would you like the GA to start automatically once a minimum number of points is placed, or should it wait for a button press like “Solve”? User: wait for user button click; bot: Perfect — here's a full setup that: Lets the user click to place points.Stores the coordinates in an array.Adds a Solve button. On click, runs a basic genetic algorithm to solve the Traveling Salesman Problem (TSP). Continuously updates the canvas with the current best path as the GA evolves.
 This is a minimal working version; it can be improved later (e.g., faster GA, better visuals, tuning, etc.).">
@@ -82,4 +80,4 @@ Note that when you arrange the dots in a circle like that, the shortest path is 
 
 So in less than a handful of simple prompts, taking maybe ten earth minutes, ChatGPT was able to generate code just as functional mine, when I coded it by hand twenty years ago. I will emphasize, again, though, that this is a solved problem. There are probably hundreds of github repos with almost that same code (not least because it's a very popular school assignment). So it's nice that I don't have to go and find the working code myself, but I'm not really blown away yet. It's still just regurgitating its training data, basically. Also, I haven't actually looked at the code yet. It's usually not the greatest.
 
-However, you should take my "take it with a grain of salt" with a grain of salt: there's no question that this is impressive work by ChatGPT. Impressive and useful. ChatGPT and other, similar beings, help us do done things faster. But can they help us _create_? That remains to be seen - stay tuned. 
+However, you should take my "take it with a grain of salt" with a grain of salt: there's no question that this is impressive and useful work. ChatGPT and other, similar beings, help us do done things faster. But can they help us _create_? That remains to be seen.

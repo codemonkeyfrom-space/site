@@ -13,6 +13,16 @@ const posts = (await getCollection('blog')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZTGTL5T3M"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-NZTGTL5T3M');
+		</script>
+		
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	
@@ -40,15 +50,14 @@ const posts = (await getCollection('blog')).sort(
 
 			<h2>What is there to do here?</h2>
 			<p>
-				There are a few things to do here, other than just clicking all the pages and reading them.
+				There are a few things to do, other than just clicking all the pages and reading them.
 				There are some interactive web pages involving <a href="/blog/marked-chessboard">chess</a>, 
-				<a href='/blog/conways-game-of-life/'>cellular automata</a>, and other fun stuff. 
+				<a href='/blog/conways-game-of-life/'>cellular automata</a>, <a href="/blog/ga4tsp">genetic algorithms</a> and other fun stuff. 
 				If you're curious about any of that kind of thing, the best place to start is the <a href="/blog">blog</a>.
 			</p>
-		</main >
+		</main>
 		<div class="rightMenu">
 			<h5>Recent blog posts</h5>
-			
 			<section>
 					{
 						posts.map((post) => (
