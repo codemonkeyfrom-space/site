@@ -1,5 +1,5 @@
 ---
-title: 'Trade Wars 2002 VS Code Color Theme'
+title: 'Visual Studio Code Color Theme - Trade Wars 2002'
 description: 'An extension for VS Code to set your color theme.'
 pubDate: '2025-05-02'
 heroImage: '/tw2002-colors-vscode.jpg'

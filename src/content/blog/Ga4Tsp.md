@@ -11,7 +11,7 @@ Today we show how to use ChatGPT (or whichever of the others you prefer) to crea
 </p>
 
 Here are a few links you may want to keep handy as you're reading this, though it is by no means necessary. You might consider opening them in a separate window, on your other monitor, or something. 
-- <a href="https://pabrams.github.io/Hga4Tsp/">A Hierarchical Genetic Algorithm For The Traveling Salesman Problem </a> explains a lot about the subject matter discussed below, for those that aren't familiar. We don't go into the hierarchical stuff for this blog post, though, so you could stop reading when you get to that part.
+- <a href="https://pabrams.github.io/Hga4Tsp/">A Hierarchical Genetic Algorithm For The Traveling Salesman Problem </a> explains a lot about the subject matter discussed below, for those that aren't familiar. We don't go into the hierarchical stuff during this blog post, though, so you could stop reading when you get to that part.
 - Here's the <a href="https://github.com/codemonkeyfrom-space/Ga4Tsp">source code</a>. There are branches containing the code generated after each prompt. 
 - The working demo of the final result (after the third prompt) is deployed at <a href="https://codemonkeyfrom-space.github.io/Ga4Tsp/">codemonkeyfrom-space.github.io/Ga4Tsp/</a>. You can click in the box to make a bunch of dots, which become the cities of your TSP once you click the button.
 
