@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-	site: 'https://codemonkeyfrom.space',
+	site: 'https://codemonkeyfromspace.com',
 	base: '/',
 	integrations: [mdx(), sitemap()],
 	  
