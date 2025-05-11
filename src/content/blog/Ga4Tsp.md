@@ -5,7 +5,7 @@ pubDate: '2025-05-10'
 heroImage: '/Ga4Tsp/tsp5.jpg'
 ---
 <p>
-<img width="200" align="right" src=/Ga4Tsp/first-tspga-by-chatgpt.jpg alt="" />
+<img width="200" align="right" src=/Ga4Tsp/first-tspga-by-chatgpt.jpg alt="" style="margin: 0 10px 10px 0;" />
 
 Today we show how to use ChatGPT (or whichever of the others you prefer) to create a genetic algorithm that solves the travelling salesman problem, visually, on your very own (local) web page (or if you're lazy like us, just play with <a href="https://codemonkeyfrom-space.github.io/Ga4Tsp/">our published version</a>). This first post covers the initial steps to get this done. Although the author is a veteran programmer and experienced software engineer, he wrote absolutely no code for this blogpost; it was strictly copy/paste from ChatGPT. Anyone could achieve the same result, armed with the appropriate prompts. 
 </p>
