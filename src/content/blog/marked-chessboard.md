@@ -21,7 +21,7 @@ There's also <a href="https://chess.yzrin.com/">chess.yzrin.com</a> which has mo
 
 <h3> Is this really useful? </h3>
 
-A disclaimer before I start talking about the benefits of marking up a virtual chessboard like this. I have aphantasia, meaning I can't conjure up images in my mind. Apparently, only three percent of the population have that; most people can picture objects in their mind. It's not nearly as serious a problem as you might think; apparently there's actually no impairment at all to visualization-related cognitive exercises in people with aphantasia compared to people without. Still, I think it's worth mentioning, given the subject matter.
+A disclaimer before I start talking about the benefits of marking up a virtual chessboard like this. I have aphantasia, meaning I can't conjure up images in my mind. Apparently, only three percent of the population have that. It's not nearly as serious a problem as you might think; apparently there's actually no impairment at all to visualization-related cognitive exercises in people with aphantasia compared to people without. Still, I think it's worth mentioning, given the subject matter.
 
 To be honest, when I first implemented this kind of a visualization tool and started using it, I realized it wasn't nearly as useful as I thought it would be. My brain can't make much sense of it, anyway; maybe I need more practice. I guess if you played with it a lot you might get used to the extra visual information and it might help avoid blunders, but I don't think that would be a good thing, because you can't play with that board all the time, and if you tried it would probably be considered cheating.
 
