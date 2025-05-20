@@ -51,21 +51,7 @@ const posts = (await getCollection('blog')).sort(
 				If you're curious about any of that kind of thing, the best place to start is the <a href="/blog">blog</a>.
 			</p>
 		</main>
-		<div class="rightMenu">
-			<h5>Recent blog posts</h5>
-			<section>
-					{
-						posts.map((post) => (
-								<a href={`/blog/${post.id}/`}>
-									<p class="date">
 
-										{post.data.title}
-									</p>
-								</a>
-						))
-					}
-			</section>
-		</div>
 		<Footer />
 	</body>
 </html>
