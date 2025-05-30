@@ -20,9 +20,6 @@ const posts = (await getCollection('blog')).sort(
 			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 			})(window,document,'script','dataLayer','GTM-W4K29XRX');</script>
 			<!-- End Google Tag Manager -->
-
-		
-
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	
@@ -50,6 +47,17 @@ const posts = (await getCollection('blog')).sort(
 				<a href='/blog/conways-game-of-life/'>cellular automata</a>, <a href="/blog/ga4tsp">genetic algorithms</a> and other fun stuff. 
 				If you're curious about any of that kind of thing, the best place to start is the <a href="/blog">blog</a>.
 			</p>
+
+			<h2>List of bogposts</h2>
+			<ul>
+				{posts.map(post => (
+				<li>
+					<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+					<br />
+					<small><FormattedDate date={post.data.pubDate} /></small>
+				</li>
+				))}
+			</ul>
 		</main>
 
 		<Footer />
