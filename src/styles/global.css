@@ -30,6 +30,22 @@
 	font-style: normal;
 	font-display: swap;
 }
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 5px 0; 
+  }
+}
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
