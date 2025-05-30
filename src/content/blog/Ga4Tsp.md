@@ -45,7 +45,7 @@ Let's dive right in. That's one of the things that's great about AI: we don't re
 
 <img src='/Ga4Tsp/prompt1-qa.jpg' alt="Question: can you code me up a small web page that lets a user draw some points on a canvas; Answer: Sure! Here's a simple HTML page with JavaScript that lets a user click on a canvas to draw points (small filled circles). It doesn't use any external libraries:"></img>
 
-You can find the code that chatGPT provided in its response at <a href='https://github.com/codemonkeyfrom-space/Ga4Tsp/blob/Prompt1/index.html'>the `Prompt1` branch of our `Ga4Tsp` github repository.</a> I tried loading index.html up in a browser, and it works - you can draw a bunch of dots, just like I asked. Gee, that sure was easy. This is why people are so nuts about AI right now. Because it can do really simple programming tasks that have already been done and published on the web hundreds of times.
+You can find the code that chatGPT provided in its response at <a href='https://github.com/codemonkeyfrom-space/Ga4Tsp/blob/Prompt1/index.html'>the `Prompt1` branch of our `Ga4Tsp` github repository.</a> I tried loading index.html up in a browser, and <a href="https://codemonkeyfrom-space.github.io/Ga4Tsp/">it works</a> - you can draw a bunch of dots, just like I asked. Gee, that sure was easy. This is why people are so nuts about AI right now. Because it can do really simple programming tasks that have already been done and published on the web hundreds of times.
 
 Anyway, I'll admit it must seem impressive from a human's perspective, compared to what you had before. Getting back to the lesson, here's how the conversation continued.
 
