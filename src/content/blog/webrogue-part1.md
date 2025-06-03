@@ -7,7 +7,7 @@ heroImage: '/webrogue/part1/ss1.jpg'
 <p>
 <img width="400" align="right" src="/webrogue/part1/ss4.jpg" alt="screenshot of browser showing ascii map and other panels" style="margin: 0 10px 10px 0;" />
 
-Today, we start a new project: a roguelike game with ascii graphics that is played in the browser. This [part 1 is playable]((https://codemonkeyfromspace.github.io/webrogue-part1/), but all you can do so far is move around on a map. 
+Today, we start a new project: a roguelike game with ascii graphics that is played in the browser. This [part 1 is playable](https://codemonkeyfromspace.github.io/webrogue-part1/), but all you can do so far is move around on a map. 
 
 You can find the source code and corresponding deployment at the following links:
 - [deployment](https://codemonkeyfromspace.github.io/webrogue-part1/)
