@@ -1,13 +1,14 @@
 ---
 title: 'Webrogue Part 2: map generation: simplex noise with warping'
 description: 'Webrogue Part 2: map generation: simplex noise with warping'
-pubDate: '2025-06-03'
+pubDate: '2025-06-08'
 heroImage: '/webrogue/part2-mapgen/ss1.jpg'
 demoUrl: '/'
 ---
+
 <p>
 To continue our series on our new web-based roguelike project called "webrogue", we examine some of our map generation options. 
-We wanted to start by generating a relatively realistic overworld map using configurable "terrain types" represented by ascii character glyphs and colors. 
+We wanted to start by generating a relatively realistic overworld map using configurable terrain types represented by ascii glyphs and colors. 
 As usual, we sought to save some time by asking an AI to help.
 </p>
 <p>
@@ -30,5 +31,11 @@ You can find the source code and corresponding deployment at the following links
 
 <br/>
 If you click the "deployment" link above you should see a randomly generated map. Click the gear <img src='/webrogue/part2-mapgen/gear.jpg' alt="settings" title="settings"></img> icon at the bottom right to open the settings. 
+
+
+Here are some examples of what a generated map looks like under various parameters.
+
+<h3>Default Parameters</h3>
+<img src="webrogue/part2-mapgen/1_1_linear-increase-threshold.jpg" alt="generated map with settings open"></img>
 
 
