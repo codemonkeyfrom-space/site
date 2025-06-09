@@ -52,8 +52,9 @@ const today = new Date();
 		</a>
 		<a href="/rss.xml" target="_blank" rel="noopener">
 			<span class="sr-only">RSS feed</span>
-			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" fill="rgb(96, 115, 159)">
-			<path d="M2 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM2 9a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2zm0-4a9 9 0 0 1 9 9h2a11 11 0 0 0-11-11v2z"/>
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" fill="currentColor">
+			<path 
+				d="M2 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM2 9a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2zm0-4a9 9 0 0 1 9 9h2a11 11 0 0 0-11-11v2z"/>
 			</svg>
 		</a>
 	</div>
@@ -61,9 +62,9 @@ const today = new Date();
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
+		background: #000;
+		color: #999;
+		text-align: center;		
 	}
 	.social-links {
 		display: flex;
@@ -73,7 +74,7 @@ const today = new Date();
 	}
 	.social-links a {
 		text-decoration: none;
-		color: rgb(var(--gray));
+		color: #999;
 	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));

@@ -31,24 +31,7 @@ const posts = (await getCollection('blog')).sort(
 
 		<Header />
 		<main>
-			<h1>
-				This is CodeMonkeyFromSpace.com
-			</h1>
-			<p>
-				You can learn a lot from a monkey from space. 
-				That's why we've started this website and blog. 
-				To help people learn.
-			</p>
-
-			<h2>What is there to do here?</h2>
-			<p>
-				There are a few things to do, other than just clicking all the pages and reading them.
-				There are some interactive web pages involving <a href="/blog/marked-chessboard">chess</a>, 
-				<a href='/blog/conways-game-of-life/'>cellular automata</a>, <a href="/blog/ga4tsp">genetic algorithms</a> and other fun stuff. 
-				If you're curious about any of that kind of thing, the best place to start is the <a href="/blog">blog</a>.
-			</p>
-
-			<h2>List of bogposts</h2>
+			<h2>List of blog posts</h2>
 			<ul>
 				{posts.map(post => (
 				<li>
