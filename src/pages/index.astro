@@ -30,15 +30,23 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<h2>List of blog posts</h2>
-			<ul>
-				{posts.map(post => (
-				<li>
-					<a href={`/blog/${post.id}/`}>{post.data.title}</a>
-					<br />
-					<small><FormattedDate date={post.data.pubDate} /></small>
-				</li>
-				))}
-			</ul>
+			<div class="post-list">
+			{posts.map(post => (
+				<div class="post-item">
+				<a href={`/blog/${post.id}/`} class="post-link">
+					<img width="180" src={post.data.heroImage} alt="" />
+					<div class="post-content">
+					<h4 class="title">{post.data.title}</h4>
+					<p class="date">
+						<FormattedDate date={post.data.pubDate} />
+					</p>
+					</div>
+				</a>
+				</div>
+			))}
+			</div>
+
+			</div>
 		</main>
 
 		<Footer />
