@@ -7,7 +7,7 @@ demoUrl: '/'
 ---
 <img src="/webrogue/part2-mapgen/ss1.jpg" alt="generated map with settings open"></img>
 <p>
-To continue our series on our new web-based roguelike project called "webrogue", we examine some of our map generation options. 
+To continue my series on my web-based rogulike game dubbed "webrogue", I will talk about procedural map generation using something called simplex noise.. 
 We wanted to start by generating a relatively realistic overworld map using configurable terrain types represented by ascii glyphs and colors. 
 
 As usual, we sought to save some time by getting an AI bot to help.
